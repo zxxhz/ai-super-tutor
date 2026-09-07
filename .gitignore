@@ -1,0 +1,5 @@
+# 本地内部文件，不推送到 GitHub
+.trae/
+*.zip
+.DS_Store
+Thumbs.db

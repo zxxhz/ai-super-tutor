@@ -1,0 +1,22 @@
+{
+  "name": "ai-super-tutor",
+  "version": "1.0.0",
+  "display_name": "AI 超级私教",
+  "license": "MIT",
+  "description": "基于六大认知科学原理、把通用 AI 驯化成 5 种超级私教形态的学习辅导 Skill（费曼逆向教学 / 苏格拉底阶梯考官 / 布鲁姆通关门禁 / 魔鬼代言人 / 测试驱动对练）。注入任意讲义作事实标尺，可在 5 种模式间切换。",
+  "framework": "SKILL.md",
+  "engine": "any",
+  "entry": "SKILL.md",
+  "files": ["SKILL.md", "LICENSE.txt", "README.md"],
+  "size": "single",
+  "author": "learning-skills",
+  "install": {
+    "method": "copy",
+    "steps": [
+      "将本目录（含 SKILL.md）整体复制到目标 Agent 的 skills 目录下，保持文件夹名为 ai-super-tutor。",
+      "TRAE：目标路径为 <数据目录>/.trae-cn/skills/ai-super-tutor/，并在 skill-config.json 的 managedSkills 中登记 \"ai-super-tutor\": \"user_upload\"。",
+      "其他支持 SKILL.md 的 Agent（如 Claude Code / Cursor 等）：放入其约定的 skills/ 或 .agent/skills 目录即可。",
+      "该技能为纯提示词驱动，不依赖任何第三方工具；无 AskUserQuestion 工具时自动降级为纯文本提问。"
+    ]
+  }
+}
